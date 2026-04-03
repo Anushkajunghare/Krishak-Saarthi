@@ -4,15 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishak Saarthi | Empowering Farmers with Smart Technology</title>
-    <meta name="description"
-        content="Krishak Saarthi is a professional agritech platform providing AI-based insights, financial tools, and real-time support to modern farmers.">
-    <!-- Google Fonts -->
+    <!-- Performance Optimization: Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
         rel="stylesheet">
+    
+    <!-- SEO & Metadata -->
+    <title>Krishak Saarthi | Smart Agritech for Modern Farmers</title>
+    <meta name="description"
+        content="Krishak Saarthi empowers Indian farmers with AI-driven insights, crop health monitoring, and financial tools. The all-in-one agritech solution.">
+    <meta name="keywords" content="agritech, farming app, soil health, crop disease, Indian agriculture, Krishak Saarthi">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Krishak Saarthi",
+      "url": "https://krishaksaarthi.com",
+      "logo": "https://krishaksaarthi.com/images/logo.png",
+      "description": "Empowering farmers with smart technology and AI-based insights.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nagpur",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/krishak-saarthi-5561933ba",
+        "https://www.instagram.com/krishak_saarthi"
+      ]
+    }
+    </script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -21,11 +48,36 @@
 
 <body>
 
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Intro Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-inner">
+            <div class="splash-logo-box">
+                <img src="images/logo.png" alt="Krishak Saarthi Logo" id="splash-logo">
+            </div>
+            <div class="splash-text-box">
+                <h2 id="splash-tagline">पोषण से समृद्धि तक</h2>
+            </div>
+        </div>
+        <div class="splash-bg">
+            <div class="splash-blob blob1"></div>
+            <div class="splash-blob blob2"></div>
+        </div>
+    </div>
+
     <!-- Header / Navbar -->
     <nav id="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <div class="logo-icon"></div>
+                <img src="images/logo.png" alt="Krishak Saarthi Logo" class="logo-img">
                 <span>Krishak Saarthi</span>
             </a>
             <ul>
@@ -43,13 +95,16 @@
     <section id="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <span class="tagline animate-on-scroll">🌾 Innovating Agriculture</span>
-            <h1 class="animate-on-scroll">Krishak Saarthi</h1>
-            <p class="description animate-on-scroll">
+            <span class="tagline animate-on-scroll fade-up">🌾 Innovating Agriculture</span>
+            <h1 class="animate-on-scroll">
+                <span class="hero-word fade-up delay-1">Krishak</span>
+                <span class="hero-word fade-up delay-2">Saarthi</span>
+            </h1>
+            <p class="description animate-on-scroll fade-up delay-2">
                 Empowering farmers with smart technology. An all-in-one agritech platform that brings knowledge,
                 financial tools, and smart farming solutions directly to your fingertips.
             </p>
-            <div class="hero-btns animate-on-scroll">
+            <div class="hero-btns animate-on-scroll fade-up delay-3">
                 <a href="#introduction" class="btn btn-primary">Get Started</a>
                 <a href="#usp" class="btn btn-outline">Explore Features</a>
             </div>
@@ -59,10 +114,10 @@
     <!-- Introduction Section -->
     <section id="introduction">
         <div class="container intro-content">
-            <div class="intro-image animate-on-scroll">
-                <img src="images/hero.png" alt="Agriculture Innovation">
+            <div class="intro-image animate-on-scroll fade-left">
+                <img src="images/hero.png" alt="Agriculture Innovation" loading="lazy">
             </div>
-            <div class="intro-text animate-on-scroll">
+            <div class="intro-text animate-on-scroll fade-right">
                 <h2>Welcome to Krishak Saarthi</h2>
                 <p>
                     Krishak Saarthi is a pioneering agritech app designed to support farmers by bridging the gap between
@@ -92,22 +147,22 @@
                 <p>Creating a sustainable and productive ecosystem for the backbone of our nation.</p>
             </div>
             <div class="impact-grid">
-                <div class="impact-card animate-on-scroll">
+                <div class="impact-card animate-on-scroll fade-up">
                     <i class="fas fa-seedling"></i>
                     <h3>Boost Productivity</h3>
                     <p>Improve crop yields with data-driven recommendations tailored to your soil.</p>
                 </div>
-                <div class="impact-card animate-on-scroll">
+                <div class="impact-card animate-on-scroll fade-up delay-1">
                     <i class="fas fa-shield-virus"></i>
                     <h3>Minimize Losses</h3>
                     <p>Early disease detection and weather alerts to protect your precious harvest.</p>
                 </div>
-                <div class="impact-card animate-on-scroll">
+                <div class="impact-card animate-on-scroll fade-up delay-2">
                     <i class="fas fa-wallet"></i>
                     <h3>Increase Income</h3>
                     <p>Better market insights and cost management tools to maximize your profits.</p>
                 </div>
-                <div class="impact-card animate-on-scroll">
+                <div class="impact-card animate-on-scroll fade-up delay-3">
                     <i class="fas fa-leaf"></i>
                     <h3>Sustainability</h3>
                     <p>Promoting eco-friendly practices that preserve the land for future generations.</p>
@@ -156,47 +211,47 @@
                 <p>Explore our wide range of features designed to simplify your daily operations.</p>
             </div>
             <div class="usp-grid">
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale">
                     <i class="fas fa-vial"></i>
                     <h3>Crop Suggestion</h3>
                     <p>Get personalized crop labels based on soil quality and climate.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-1">
                     <i class="fas fa-bug"></i>
                     <h3>Disease Detection</h3>
                     <p>Upload a photo of your plant and get instant diagnosis and cure.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-2">
                     <i class="fas fa-cloud-sun-rain"></i>
                     <h3>Hyperlocal Weather</h3>
                     <p>Precise weather forecasts for your exact farm location.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-1">
                     <i class="fas fa-calculator"></i>
                     <h3>Farming Calculator</h3>
                     <p>Estimate input costs and potential revenue with ease.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-2">
                     <i class="fas fa-comments"></i>
                     <h3>Community Forum</h3>
                     <p>Connect with fellow farmers to share tips and experiences.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-3">
                     <i class="fas fa-recycle"></i>
                     <h3>Carbon Credits</h3>
                     <p>Earn rewards for carbon-smart and sustainable farming.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-2">
                     <i class="fas fa-landmark"></i>
                     <h3>Govt. Schemes</h3>
                     <p>Stay updated on the latest agricultural subsidies and loans.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-3">
                     <i class="fas fa-truck-pickup"></i>
                     <h3>Equipment Rental</h3>
                     <p>Find and rent machinery from verified local providers.</p>
                 </div>
-                <div class="usp-card animate-on-scroll">
+                <div class="usp-card animate-on-scroll fade-scale delay-4">
                     <i class="fas fa-book"></i>
                     <h3>Hisab Kitab</h3>
                     <p>Track your farm expenses and income digitally.</p>
@@ -214,9 +269,9 @@
             </div>
             <div class="team-grid">
                 <!-- Founder -->
-                <div class="team-card animate-on-scroll">
+                <div class="team-card animate-on-scroll fade-up">
                     <div class="team-img-wrapper">
-                        <img src="images/vedant.png" alt="Vedant Kashyap">
+                        <img src="images/vedant.jpeg" alt="Vedant Kashyap" loading="lazy">
                     </div>
                     <div class="team-info">
                         <span class="role">Founder</span>
@@ -226,9 +281,9 @@
                     </div>
                 </div>
                 <!-- Co-Founder -->
-                <div class="team-card animate-on-scroll">
+                <div class="team-card animate-on-scroll fade-up delay-1">
                     <div class="team-img-wrapper">
-                        <img src="images/suhan.png" alt="Suhan Noorani">
+                        <img src="images/suhan.jpeg" alt="Suhan Noorani" loading="lazy">
                     </div>
                     <div class="team-info">
                         <span class="role">Co-Founder</span>
@@ -238,9 +293,9 @@
                     </div>
                 </div>
                 <!-- CMO -->
-                <div class="team-card animate-on-scroll">
+                <div class="team-card animate-on-scroll fade-up delay-2">
                     <div class="team-img-wrapper">
-                        <img src="images/anushka.png" alt="Anushka Junghare">
+                        <img src="images/anushka.jpeg" alt="Anushka Junghare" loading="lazy">
                     </div>
                     <div class="team-info">
                         <span class="role">CMO</span>
@@ -249,9 +304,9 @@
                     </div>
                 </div>
                 <!-- Technical Head -->
-                <div class="team-card animate-on-scroll">
+                <div class="team-card animate-on-scroll fade-up delay-3">
                     <div class="team-img-wrapper">
-                        <img src="images/sarvesh.png" alt="Sarvesh Chonde">
+                        <img src="images/sarvesh.jpeg" alt="Sarvesh Chonde" loading="lazy">
                     </div>
                     <div class="team-info">
                         <span class="role">Technical Head</span>
@@ -270,10 +325,11 @@
     <!-- Connect / Footer Section -->
     <footer id="contact">
         <div class="container">
+
             <div class="footer-main">
                 <div class="footer-brand animate-on-scroll">
                     <a href="#" class="logo footer-logo">
-                        <div class="logo-icon" style="background-color: var(--secondary-green);"></div>
+                        <img src="images/logo.png" alt="Krishak Saarthi Logo" class="logo-img">
                         <span>Krishak Saarthi</span>
                     </a>
                     <p>Empowering the hands that feed the world through technology and innovation.</p>
@@ -287,7 +343,7 @@
                         </li>
                         <li>
                             <i class="fas fa-phone-alt"></i>
-                            <a href="tel:+917774098938">+91 77740 98938</a>
+                            <a href="tel:+919325711699">+91 93257 11699</a>
                         </li>
                     </ul>
                 </div>
@@ -296,13 +352,15 @@
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/krishak-saarthi-5561933ba" target="_blank"><i
                                 class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/krishak_saarthi?igsh=cXdjcTNiOXM0bmE=" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/krishak-saarthi-5561933ba" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Krishak Saarthi. All Rights Reserved. Built with ❤️ for Indian Farmers.</p>
+                <p>&copy; 2024 Krishak Saarthi. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
